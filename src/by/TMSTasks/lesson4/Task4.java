@@ -13,6 +13,10 @@ public class Task4 {
         for (int i = 0; i != b; i++){
             result = result + a;
         }
-        System.out.println("Значение умножения равно: " + result);
+        if (a == 0){
+            System.out.println("Деление на ноль невозможно");
+        }if (a > 0){
+            System.out.println("Результат умножения равен: " + result);
+        }
         }
     }
