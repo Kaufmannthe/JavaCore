@@ -7,7 +7,7 @@ public class Task3 {
             int[] array = new int[15];
             int count = 0;
         Random random = new Random();
-        System.out.println("Значения массива:   ");
+        System.out.println("Значения массива:");
         for (int i = 0; i <= 14; i++) {
             array[i] = random.nextInt(1, 100);
             System.out.print(array[i] + " ");
