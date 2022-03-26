@@ -68,9 +68,6 @@ public class Extra_Array_1 {
                 }
 
             }
-            for (int i = 0; i < array.length; i++) {
-
-            }
             System.out.print("Наименьшее значение массива: " + array[0]);
         }
     }
