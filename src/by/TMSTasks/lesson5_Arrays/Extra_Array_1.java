@@ -57,9 +57,21 @@ public class Extra_Array_1 {
             }
                 System.out.println("Cредне арифметическое элементов массива, превосходящих некоторое число С: " + p3 / count2);
 //------------------------------------------- 4.
-            System.out.println();
+            int count1 = array.length;
+            for (int i = 0; i < count1; i++) {
+                for (int j = 1; j < count1 - 1 ; j++) {
+                    if (array[j-1] > array[j]){
+                        array[j - 1] = array[j];
+                        array[j] = array[j-1];
+                    }
 
+                }
 
             }
+            for (int i = 0; i < array.length; i++) {
+
+            }
+            System.out.print("Наименьшее значение массива: " + array[0]);
         }
     }
+}
