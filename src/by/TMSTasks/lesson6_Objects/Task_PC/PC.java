@@ -1,4 +1,4 @@
-package by.TMSTasks.lesson6_Objects;
+package by.TMSTasks.lesson6_Objects.Task_PC;
 
 import java.util.Random;
 import java.util.Scanner;
