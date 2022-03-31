@@ -4,15 +4,42 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class PC {
-    String cpu;
-    int ram;
-    int hdd;
+    private String cpu;
+    private int ram;
+    private int hdd;
     int cycles;
 
+    public PC() {
+    }
+
+    public String getCpu() {
+        return cpu;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public int getHdd() {
+        return hdd;
+    }
+
+    public void setCpu(String cpu) {
+        this.cpu = cpu;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public void setHdd(int hdd) {
+        this.hdd = hdd;
+    }
+
     void systemInfo(){
-        System.out.println("Процессор: " + cpu +
-                "\n" + "Оперативная память: " + ram +
-                "\n" + "Жесткий диск: " + hdd);     }   //Method 1
+        System.out.println("Процессор: " + getCpu() +
+                "\n" + "Оперативная память: " + getRam() +
+                "\n" + "Жесткий диск: " + getHdd());     }   //Method 1
 
 
 
@@ -48,10 +75,10 @@ public class PC {
 
 
         PC myPC = new PC();
-        myPC.ram = 8;
-        myPC.hdd = 1000;
+        myPC.setRam(8);
+        myPC.setHdd(1000);
         myPC.cycles = 3;
-        myPC.cpu = "Intel Core i5 8530";
+        myPC.setCpu("Intel Core i5 8540");
 
         myPC.systemInfo();
 
