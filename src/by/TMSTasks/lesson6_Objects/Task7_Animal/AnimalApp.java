@@ -7,7 +7,6 @@ public class AnimalApp {
         Animal horse = new Horse("траву","Минск", 30);
 
         Animal[] animals = {dog,cat,horse};
-
         Vet vet = new Vet("Артём");
 
         for(Animal animal1 : animals ){
