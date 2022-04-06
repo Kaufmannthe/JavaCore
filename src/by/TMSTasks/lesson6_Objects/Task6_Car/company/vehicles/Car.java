@@ -51,7 +51,7 @@ public class Car {
         System.out.println("Марка машины: " + getCarBrand() + ", класс машины: " + getCarClass()
         + ", вес машины: " + getCarWeight() + " т., мощность двигателя: " + engine.getEnginePower() +
                 " л/c, производитель двигателя: " + engine.getEngineBrand() + ", водитель: "
-                + driver.getDriversName() + " c опытом вождения " + driver.getDriversExperience() + " лет.");
+                + driver.getDriversName() + " " +driver.getAge() + " года," + " c опытом вождения " + driver.getDriversExperience() + " лет.");
     }
 
 }
