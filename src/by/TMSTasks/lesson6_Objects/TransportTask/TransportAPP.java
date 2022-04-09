@@ -30,7 +30,7 @@ public class TransportAPP {
 
 
         System.out.println();
-        civilAirTransport.passengerValueCheck(101);         //test passengerValueCheck
+        civilAirTransport.passengerValueCheck(99);         //test passengerValueCheck
 
         System.out.println();
         militaryAirTransport.rocketValueCheck();            //test rocketValueCheck
