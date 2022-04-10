@@ -1,4 +1,4 @@
-package by.TMSTasks.lesson6_Objects.Task1_Interface_1;
+package by.TMSTasks.lesson6_Objects.Task1_Interface_Printable;
 
 public class Book implements Printable {
     private String bookName;

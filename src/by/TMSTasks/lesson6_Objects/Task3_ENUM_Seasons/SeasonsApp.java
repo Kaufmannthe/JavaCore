@@ -1,4 +1,4 @@
-package by.TMSTasks.lesson6_Objects.Task3_Interface_Seasons;
+package by.TMSTasks.lesson6_Objects.Task3_ENUM_Seasons;
 
 
 public class SeasonsApp {
