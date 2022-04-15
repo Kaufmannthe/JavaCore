@@ -45,7 +45,7 @@ public class Run {
             System.out.println(robot.getPrice());
             System.out.println();
         }
-        if (robot1.getPrice() > (robot2.getPrice() & robot3.getPrice())) {
+        if (robot1.getPrice() > (robot2.getPrice() | robot3.getPrice())) {
             System.out.println("Максимальная стоимость робота: " + robot1.getPrice());
             if (robot2.getPrice() > (robot1.getPrice() | robot3.getPrice())) {
                 System.out.println("Максимальная стоимость робота: " + robot2.getPrice());
