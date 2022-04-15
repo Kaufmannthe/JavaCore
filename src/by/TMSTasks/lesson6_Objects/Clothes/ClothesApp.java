@@ -47,9 +47,11 @@ public class ClothesApp {
         if (person1.getPrice() - person2.getPrice() > 0 &&
                 person1.getPrice() - person3.getPrice() > 0) {
             System.out.println("Наибольшая стоимость из наборов: " + person1.getPrice());}
+
             if (person2.getPrice() - person1.getPrice() > 0
                     && person2.getPrice() - person3.getPrice() > 0){
                 System.out.println("Наибольшая стоимость из наборов: " + person2.getPrice());}
+
                 if (person3.getPrice() - person1.getPrice() > 0
                         && person3.getPrice() - person2.getPrice() > 0){
                     System.out.println("Наибольшая стоимость из наборов: " + person3.getPrice());
