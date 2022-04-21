@@ -40,15 +40,18 @@ public class Car {
         this.carPrice = carPrice;
     }
 
-    public static void carStart(Car car) throws Car_Exception {
+    public void carStart() throws CarException {
         Random r = new Random();
         int randomNumber = r.nextInt(0,21);
+        StringBuilder failure = new StringBuilder("Ошибка запуска двигателя машины " + this.carBrand + "\nПричина: " +
+                "четное число " + randomNumber);
+        StringBuilder success = new StringBuilder("Двигатель машины марки " + this.carBrand + " запущен, максимальная скорость машины: "
+                +this.carSpeed + ", стоимость машины: " + this.carPrice + "(" + randomNumber + ")");
+
         if (randomNumber % 2 != 0){
-            System.out.println("Двигатель машины марки " + car.getCarBrand() + " запущен, максимальная скорость машины: "
-                    +car.getCarSpeed() + ", стоимость машины: " + car.carPrice + "(" + randomNumber + ")");
+            System.out.println(success);
         }else {
-            throw new Car_Exception("Ошибка запуска двигателя машины " + car.carBrand + "\nПричина: " +
-                    "четное число " + randomNumber);
+            throw new CarException(String.valueOf(failure));
         }
 
     }
