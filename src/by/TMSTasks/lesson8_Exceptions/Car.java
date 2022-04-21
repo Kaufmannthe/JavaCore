@@ -43,8 +43,11 @@ public class Car {
     public void carStart() throws CarException {
         Random r = new Random();
         int randomNumber = r.nextInt(0,21);
-        StringBuilder failure = new StringBuilder("Ошибка запуска двигателя машины " + this.carBrand + "\nПричина: " +
-                "четное число " + randomNumber);
+        StringBuilder failure = new StringBuilder("Ошибка запуска двигателя машины ");
+        failure.append(this.carBrand);
+        failure.append("\nПричина: четное число ");
+        failure.append(randomNumber);
+
         StringBuilder success = new StringBuilder("Двигатель машины марки " + this.carBrand + " запущен, максимальная скорость машины: "
                 +this.carSpeed + ", стоимость машины: " + this.carPrice + "(" + randomNumber + ")");
 
