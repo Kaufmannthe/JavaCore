@@ -44,17 +44,12 @@ public class Car {
         Random r = new Random();
         int randomNumber = r.nextInt(0,21);
         StringBuilder failure = new StringBuilder("Ошибка запуска двигателя машины ");
-        failure.append(this.carBrand);
-        failure.append("\nПричина: четное число ");
-        failure.append(randomNumber);
+        failure.append(this.carBrand).append("\nПричина: четное число ").append(randomNumber);
 
 
         StringBuilder success = new StringBuilder("Двигатель машины марки ");
-        success.append(this.carBrand);
-        success.append(" запущен, максимальная скорость машины: ");
-        success.append(this.carSpeed);
-        success.append(", стоимость машины: ");
-        success.append(this.carPrice);
+        success.append(this.carBrand).append(" запущен, максимальная скорость машины: ").append(this.carSpeed).append(", стоимость машины: ").append(
+                this.carPrice);
 
 
         if (randomNumber % 2 != 0){
