@@ -48,8 +48,14 @@ public class Car {
         failure.append("\nПричина: четное число ");
         failure.append(randomNumber);
 
-        StringBuilder success = new StringBuilder("Двигатель машины марки " + this.carBrand + " запущен, максимальная скорость машины: "
-                +this.carSpeed + ", стоимость машины: " + this.carPrice + "(" + randomNumber + ")");
+
+        StringBuilder success = new StringBuilder("Двигатель машины марки ");
+        success.append(this.carBrand);
+        success.append(" запущен, максимальная скорость машины: ");
+        success.append(this.carSpeed);
+        success.append(", стоимость машины: ");
+        success.append(this.carPrice);
+
 
         if (randomNumber % 2 != 0){
             System.out.println(success);
