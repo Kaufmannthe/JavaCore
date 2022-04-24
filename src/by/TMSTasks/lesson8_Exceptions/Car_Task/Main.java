@@ -1,4 +1,7 @@
-package by.TMSTasks.lesson8_Exceptions;
+package by.TMSTasks.lesson8_Exceptions.Car_Task;
+
+import by.TMSTasks.lesson8_Exceptions.Car_Task.Car;
+import by.TMSTasks.lesson8_Exceptions.Car_Task.CarException;
 
 public class Main {
     public static void main(String[] args) throws CarException {

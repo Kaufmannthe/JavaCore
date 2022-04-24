@@ -1,4 +1,4 @@
-package by.TMSTasks.lesson8_Exceptions;
+package by.TMSTasks.lesson8_Exceptions.Car_Task;
 
 public class CarException extends Exception{
     public CarException() {
