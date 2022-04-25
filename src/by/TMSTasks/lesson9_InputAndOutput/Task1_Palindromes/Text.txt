@@ -5,3 +5,9 @@ level
 start
 java
 rotor
+deified
+nannah
+korn
+slipknot
+deftones
+northlane
