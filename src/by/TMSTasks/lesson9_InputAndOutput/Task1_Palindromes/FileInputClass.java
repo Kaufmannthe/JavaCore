@@ -10,7 +10,7 @@ import java.io.*;
 
 public class FileInputClass {
     public static void main(String[] args) throws IOException {
-        String input = "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1\\Text.txt";
+        String input = "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1_Palindromes\\Text.txt";
 
         try (BufferedReader reader = new BufferedReader(new FileReader((input)))) {
             String line;
@@ -25,7 +25,7 @@ public class FileInputClass {
                     System.out.println(line);             //Проверка вывода.
 
                     try (BufferedWriter writer = new BufferedWriter(new FileWriter("" +
-                            "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1\\replacedText.txt", true))) {
+                            "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1_Palindromes\\replacedText.txt", true))) {
                         //Указание директории, в которой необходимо создать файл и указать слова палиндромы.
 
                         writer.write(line + "\n"); //Запись палиндромов на файл replacedText.txt
