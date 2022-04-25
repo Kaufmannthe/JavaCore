@@ -24,8 +24,9 @@ public class FileInputClass {
 
                     System.out.println(line);             //Проверка вывода.
 
-                    try (BufferedWriter writer = new BufferedWriter(new FileWriter("" +
-                            "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1_Palindromes\\replacedText.txt", true))) {
+                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(
+                            "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1_Palindromes\\replacedText.txt",
+                            true))) {
                         //Указание директории, в которой необходимо создать файл и указать слова палиндромы.
 
                         writer.write(line + "\n"); //Запись палиндромов на файл replacedText.txt
