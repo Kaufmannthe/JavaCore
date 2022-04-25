@@ -1,4 +1,4 @@
-package by.TMSTasks.lesson9_InputAndOutput.Task1;
+package by.TMSTasks.lesson9_InputAndOutput.Task1_Palindromes;
 
 import java.io.*;
 
