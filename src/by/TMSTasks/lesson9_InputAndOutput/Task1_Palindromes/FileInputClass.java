@@ -18,7 +18,7 @@ public class FileInputClass {
             while ((line = reader.readLine()) != null) {        //Поиск слов в файле Text.txt
                 StringBuilder reversedLine = new StringBuilder(line);    //Создание SB для риверса строки line.txt.
                 reversedLine.reverse();                                 //Переворачиваем проверяемую строку.
-                if (line.toLowerCase().equals(reversedLine.toString())) {
+                if (line.equals(reversedLine.toString())) {
 
                     //Если перевернётая строка == обычной строке, то создаётся файл replacedText и туда вносятся похожие слова.
 
