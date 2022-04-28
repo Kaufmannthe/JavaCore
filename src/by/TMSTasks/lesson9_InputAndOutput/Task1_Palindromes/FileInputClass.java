@@ -11,8 +11,12 @@ import java.io.*;
 public class FileInputClass {
     public static void main(String[] args) throws IOException {
         String input = "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1_Palindromes\\Text.txt";
+        String output = "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1_Palindromes\\replacedText.txt";
 
-        try (BufferedReader reader = new BufferedReader(new FileReader((input)))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader((input))); //Указание файла, с которого считывается текст.
+             BufferedWriter writer = new BufferedWriter(new FileWriter(output, false))){
+            //Указание директории, в которой необходимо создать файл и указать слова палиндромы.
+
             String line;
 
             while ((line = reader.readLine()) != null) {        //Поиск слов в файле Text.txt
@@ -24,18 +28,7 @@ public class FileInputClass {
 
                     System.out.println(line);             //Проверка вывода.
 
-                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(
-                            "C:\\JavaCoreTMS\\src\\by\\TMSTasks\\lesson9_InputAndOutput\\Task1_Palindromes\\replacedText.txt",
-                            true))) {
-                        //Указание директории, в которой необходимо создать файл и указать слова палиндромы.
-
                         writer.write(line + "\n"); //Запись палиндромов на файл replacedText.txt
-
-
-                    } catch (IOException e) {
-                        e.printStackTrace();
-
-                    }
                 }
             }
         }
