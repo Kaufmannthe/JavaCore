@@ -329,9 +329,8 @@ public class Student implements Comparable<Student> {
 
             String studentFacultyString = "Выберите факультет:";
             System.out.println(studentFacultyString);
-            for (int i = 0; i < arrayOfFaculties.length; i++) {
-                int count = 1;
-                String result = count + ". " + arrayOfFaculties[i];
+            for (int i = 0, count = 1; i < arrayOfFaculties.length; i++, count++) {
+                String result = count + "." + arrayOfFaculties[i];
                 System.out.println(result);
             }
 
