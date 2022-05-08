@@ -393,7 +393,7 @@ public class Student implements Comparable<Student> {
             toContinue();
         }case 2 -> {
              System.out.println();
-             sortByID();
+             sortByAge();
              toContinue();
         }case 3 -> {
             String backToMenu = "Возврат в меню";
@@ -443,14 +443,14 @@ public class Student implements Comparable<Student> {
         return 0;
     }
 
-    public static Comparator<Student> CompareByID = new Comparator<Student> (){
+    public static Comparator<Student> CompareByAge = new Comparator<Student> (){
         public int compare(Student o1, Student o2){
-        return o1.getStudentId() - o2.getStudentId();
+        return o1.getStudentAge() - o2.getStudentAge();
         }
     };
 
-    public void sortByID(){
-        studentList.sort(Student.CompareByID);
+    public void sortByAge(){
+        studentList.sort(Student.CompareByAge);
         for (Student student : studentList){
             student.info();
         }
