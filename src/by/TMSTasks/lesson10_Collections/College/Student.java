@@ -67,7 +67,7 @@ public class Student implements Comparable<Student> {
         this.studentCourse = studentCourse;
 
     }
-
+    //______________________________________________________________
     String[] arrayOfFaculties = new String[5];
     String[] arrayOfNames = new String[20];
 
