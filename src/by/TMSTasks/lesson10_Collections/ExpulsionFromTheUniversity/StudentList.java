@@ -73,14 +73,16 @@ public class StudentList {
                 _____________________________________________
                 1.Список студентов.
                 2.Исключить студентов с плохой успеваемостью.
-                3.Выход.
+                3.Перевести студентов на следующий курс.
+                4.Выход.
                 _____________________________________________""";
         System.out.println(mainMenuString);
         int checkInt = scannerMainMenuShortCut.nextInt();
         switch (checkInt) {
             case 1 -> showStudentList();
             case 2 -> expulsion();
-            case 3 -> exit();
+            case 3 -> gradeUp();
+            case 4 -> exit();
             default -> {
                 String failure = "Ошибка ввода. Возврат в главное меню";
                 System.err.println(failure);
