@@ -1,5 +1,5 @@
 # Project exclude paths
 /out/
-/src/by/TMSTasks/lesson9_InputAndOutput/Task1_Palindromes/replacedText.txt
-/src/by/TMSTasks/lesson9_InputAndOutput/Task2_TextFormater/formatedText.txt
-/src/by/TMSTasks/lesson9_InputAndOutput/Task2_TextFormater/text.txt
+/src/by/TMSTasks/InputAndOutput/Task1_Palindromes/replacedText.txt
+/src/by/TMSTasks/InputAndOutput/Task2_TextFormater/formatedText.txt
+/src/by/TMSTasks/InputAndOutput/Task2_TextFormater/text.txt
