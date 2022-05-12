@@ -3,7 +3,7 @@ package by.TMSTasks.Lambda;
 public class Lambda {
     public static void main(String[] args) {
     Calculator calculatorPlus = ((x, y) -> x + y);
-    Calculator calculatorMinus = ((x, y) -> x - y);
+    Calculator calculatorMinus = ((x, y) -> x - y);             //Примеры.
     Calculator calculatorDivision = ((x, y) -> x/y);
     Calculator calculatorMultiplication = ((x, y) -> x * y);
 
@@ -14,7 +14,7 @@ public class Lambda {
 
     }
     @FunctionalInterface
-    public interface Calculator{
+    public interface Calculator{        //Функциональный интерфейс, который реализует Лямбда.
         int calculate (int x, int y);
     }
 }
