@@ -1,10 +1,8 @@
-package by.TMSTasks.StreamAPI.Task1;
+package by.TMSTasks.StreamAPI.Filter;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Array  {
     public static void main(String[] args) {

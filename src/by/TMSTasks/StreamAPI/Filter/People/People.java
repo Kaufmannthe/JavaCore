@@ -1,4 +1,4 @@
-package by.TMSTasks.StreamAPI.Task2;
+package by.TMSTasks.StreamAPI.Filter.People;
 
 public class People {
     private String name;

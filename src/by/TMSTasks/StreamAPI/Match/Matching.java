@@ -1,4 +1,4 @@
-package by.TMSTasks.StreamAPI.Task4;
+package by.TMSTasks.StreamAPI.Match;
 
 import java.util.Arrays;
 import java.util.List;

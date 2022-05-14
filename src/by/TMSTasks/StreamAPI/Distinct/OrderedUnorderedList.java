@@ -1,4 +1,4 @@
-package by.TMSTasks.StreamAPI.Task3;
+package by.TMSTasks.StreamAPI.Distinct;
 
 import java.util.Arrays;
 import java.util.Collection;

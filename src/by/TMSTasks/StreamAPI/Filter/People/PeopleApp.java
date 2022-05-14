@@ -1,8 +1,7 @@
-package by.TMSTasks.StreamAPI.Task2;
+package by.TMSTasks.StreamAPI.Filter.People;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class PeopleApp {
     public static void main(String[] args) {
