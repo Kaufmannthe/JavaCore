@@ -18,5 +18,7 @@ public class OrderedUnorderedList {
         String orderedResult = "Неупорядоченный стрим после метода distinct: " + orderedList;
         System.out.println(orderedResult);
 
+        //distinct - исключает из коллекции все дубли элементов.
+
     }
 }
