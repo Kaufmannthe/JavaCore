@@ -2,8 +2,8 @@ package by.TMSTasks.Multithreading.NewThread;
 
 public class NewThread extends Thread {
     public static void main(String[] args) {
-        for (int i = 0; i <= 100; i++) {
-            System.out.println("help");
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i + ". help");
         }
         new NewThread("Thread").start();
     }
