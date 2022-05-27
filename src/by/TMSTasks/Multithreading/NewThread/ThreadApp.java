@@ -5,5 +5,8 @@ public class ThreadApp {
         NewThread thread = new NewThread("Thread 1");
         thread.start();
         thread.join();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("hello");
+        }
     }
 }
