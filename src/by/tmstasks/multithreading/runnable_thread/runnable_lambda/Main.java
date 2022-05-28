@@ -43,16 +43,21 @@ public class Main {
         System.out.println(thread_1.getName() + " starts");
         thread_1.start();
         thread_1.join();
+        System.out.println("Первый поток " + thread_1.isAlive() + "\n");
 
         System.out.println(thread_2.getName() + " starts");
         thread_2.start();
         thread_2.join();
+        System.out.println("Второй поток " + thread_2.isAlive() + "\n");
 
         thread1.start();
         thread1.join();
+        System.out.println("Третий поток " + thread1.isAlive() + "\n");
 
         System.out.println(thread_2.getName() + " starts");
         thread_3.start();
+        thread_3.join();
+        System.out.println("Четвертый поток " + thread_3.isAlive() + "\n");
 
     }
 }
