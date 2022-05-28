@@ -58,6 +58,8 @@ public class Main {
         thread_3.start();
         thread_3.join();
         System.out.println("Четвертый поток " + thread_3.isAlive() + "\n");
+        Thread thread4 = Thread.currentThread();
+        System.out.println("Поток мейн " +thread4.isAlive());
 
     }
 }
