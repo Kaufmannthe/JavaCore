@@ -21,10 +21,9 @@ public class Main {
         Thread thread2 = new Thread(new SaveAsThread(arrayList2), "Thread 2");
         Thread thread3 = new Thread(new SaveAsThread(arrayList3), "Thread 3");
 
+        System.out.print("Threads: ");
         thread1.start();
-        Thread.sleep(10000);
         thread2.start();
-        Thread.sleep(10000);
         thread3.start();
     }
 }
