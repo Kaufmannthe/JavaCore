@@ -24,7 +24,6 @@ public class MyThread {
         Thread threadMin = new Thread(minValue(arrayList), "Thread 1");
         Thread threadMax = new Thread(maxValue(arrayList), "Thread 2");
         threadMin.start();
-        threadMin.join();
         threadMax.start();
     }
 
@@ -32,6 +31,11 @@ public class MyThread {
 
         Runnable runnable = () -> {
             int a = min.stream().min(Comparator.naturalOrder()).get();
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println("\nMinimal value of the array is: " + a);
         };
         return runnable;
@@ -40,6 +44,11 @@ public class MyThread {
     public static Runnable maxValue(ArrayList<Integer> max) {
         Runnable runnable = () -> {
             int a = max.stream().max(Comparator.naturalOrder()).get();
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println("Maximum value of the array is: " + a);
         };
         return runnable;
