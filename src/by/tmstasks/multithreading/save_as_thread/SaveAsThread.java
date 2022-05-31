@@ -26,25 +26,21 @@ public class SaveAsThread implements Runnable {
     public void run() {
         String output = "src/by/tmstasks/multithreading/save_as_thread/result.txt";
         System.out.print(Thread.currentThread().getName() + ": ");
-        synchronized (this) {
-            try {
-                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(output, true));
-
-                bufferedWriter.write(Thread.currentThread().getName() + ": ");
-                for (Integer integer : this.list) {
-                    bufferedWriter.write(integer.toString());
-                    System.out.print(integer);
-                }
-
-                bufferedWriter.write("\n");
-                bufferedWriter.close();
-                System.out.println();
-
-            } catch (IOException e) {
-                System.err.println("Error");
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(output, true));
+            bufferedWriter.write(Thread.currentThread().getName() + ": ");
+            for (Integer integer : this.list) {
+                bufferedWriter.write(integer.toString());
+                System.out.print(integer);
             }
-        }
 
+            bufferedWriter.write("\n");
+            bufferedWriter.close();
+            System.out.println();
+
+        } catch (IOException e) {
+            System.err.println("Error");
+        }
     }
 }
 

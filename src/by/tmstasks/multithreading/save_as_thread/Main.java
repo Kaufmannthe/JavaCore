@@ -22,9 +22,9 @@ public class Main {
         Thread thread3 = new Thread(new SaveAsThread(arrayList3), "Thread 3");
 
         thread1.start();
-        thread1.join();
+        Thread.sleep(10000);
         thread2.start();
-        thread2.join();
+        Thread.sleep(10000);
         thread3.start();
     }
 }
